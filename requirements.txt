@@ -1,0 +1,9 @@
+fastapi
+uvicorn[standard]
+sqlmodel
+aiofiles
+python-multipart
+openai  # optional, only needed for the AI autogen endpoint
+pydantic
+requests
+python-dotenv

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Iron Lady — Task 2</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <h1>Iron Lady — Task Manager</h1>
+
+  <section>
+    <h2>Add Task</h2>
+    <input id="title" placeholder="Title" />
+    <input id="desc" placeholder="Description (optional)" />
+    <button onclick="addTask()">Add Task</button>
+  </section>
+
+  <section>
+    <h2>Auto-generate tasks (optional)</h2>
+    <input id="genPrompt" placeholder="Plan a 2-day leadership workshop" />
+    <input id="genCount" type="number" value="3" min="1" max="10" />
+    <button id="genBtn" onclick="generateTasks()">Generate</button>
+  </section>
+
+  <section>
+    <h2>Your Tasks</h2>
+    <ul id="taskList"></ul>
+  </section>
+
+  <script src="main.js"></script>
+  <footer>
+    <p>Powered by FastAPI and OpenAI</p>
+  </footer>
+</body>
+</html>
